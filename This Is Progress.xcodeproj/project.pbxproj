@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A8CF8C7C23BD621200ADAC29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C7B23BD621200ADAC29 /* AppDelegate.swift */; };
 		A8CF8C7E23BD621200ADAC29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C7D23BD621200ADAC29 /* SceneDelegate.swift */; };
-		A8CF8C8023BD621200ADAC29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C7F23BD621200ADAC29 /* ViewController.swift */; };
 		A8CF8C8323BD621200ADAC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CF8C8123BD621200ADAC29 /* Main.storyboard */; };
 		A8CF8C8623BD621200ADAC29 /* This_Is_Progress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C8423BD621200ADAC29 /* This_Is_Progress.xcdatamodeld */; };
 		A8CF8C8823BD621500ADAC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CF8C8723BD621500ADAC29 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		A8CF8C7823BD621200ADAC29 /* This Is Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "This Is Progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CF8C7B23BD621200ADAC29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CF8C7D23BD621200ADAC29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8CF8C7F23BD621200ADAC29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8CF8C8223BD621200ADAC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8CF8C8523BD621200ADAC29 /* This_Is_Progress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = This_Is_Progress.xcdatamodel; sourceTree = "<group>"; };
 		A8CF8C8723BD621500ADAC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				A8CF8C7B23BD621200ADAC29 /* AppDelegate.swift */,
 				A8CF8C7D23BD621200ADAC29 /* SceneDelegate.swift */,
-				A8CF8C7F23BD621200ADAC29 /* ViewController.swift */,
 				A8CF8C8123BD621200ADAC29 /* Main.storyboard */,
 				A8CF8C8723BD621500ADAC29 /* Assets.xcassets */,
 				A8CF8C8923BD621500ADAC29 /* LaunchScreen.storyboard */,
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CF8C8623BD621200ADAC29 /* This_Is_Progress.xcdatamodeld in Sources */,
-				A8CF8C8023BD621200ADAC29 /* ViewController.swift in Sources */,
 				A8CF8C7C23BD621200ADAC29 /* AppDelegate.swift in Sources */,
 				A8CF8C7E23BD621200ADAC29 /* SceneDelegate.swift in Sources */,
 			);

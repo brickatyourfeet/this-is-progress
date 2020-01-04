@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8568B6323BDD231001F3DCF /* ProgressUpdateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B6223BDD231001F3DCF /* ProgressUpdateTableViewController.swift */; };
+		A8568B6523BDD271001F3DCF /* CreateProgressUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568B6423BDD271001F3DCF /* CreateProgressUpdateViewController.swift */; };
+		A88B5B4F23C071130059D739 /* ViewProgressUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B5B4E23C071130059D739 /* ViewProgressUpdateViewController.swift */; };
 		A8CF8C7C23BD621200ADAC29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C7B23BD621200ADAC29 /* AppDelegate.swift */; };
 		A8CF8C7E23BD621200ADAC29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CF8C7D23BD621200ADAC29 /* SceneDelegate.swift */; };
 		A8CF8C8323BD621200ADAC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CF8C8123BD621200ADAC29 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8568B6223BDD231001F3DCF /* ProgressUpdateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressUpdateTableViewController.swift; sourceTree = "<group>"; };
+		A8568B6423BDD271001F3DCF /* CreateProgressUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProgressUpdateViewController.swift; sourceTree = "<group>"; };
+		A88B5B4E23C071130059D739 /* ViewProgressUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressUpdateViewController.swift; sourceTree = "<group>"; };
 		A8CF8C7823BD621200ADAC29 /* This Is Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "This Is Progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CF8C7B23BD621200ADAC29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CF8C7D23BD621200ADAC29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				A8CF8C8923BD621500ADAC29 /* LaunchScreen.storyboard */,
 				A8CF8C8C23BD621500ADAC29 /* Info.plist */,
 				A8CF8C8423BD621200ADAC29 /* This_Is_Progress.xcdatamodeld */,
+				A8568B6223BDD231001F3DCF /* ProgressUpdateTableViewController.swift */,
+				A8568B6423BDD271001F3DCF /* CreateProgressUpdateViewController.swift */,
+				A88B5B4E23C071130059D739 /* ViewProgressUpdateViewController.swift */,
 			);
 			path = "This Is Progress";
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CF8C8623BD621200ADAC29 /* This_Is_Progress.xcdatamodeld in Sources */,
+				A88B5B4F23C071130059D739 /* ViewProgressUpdateViewController.swift in Sources */,
+				A8568B6323BDD231001F3DCF /* ProgressUpdateTableViewController.swift in Sources */,
+				A8568B6523BDD271001F3DCF /* CreateProgressUpdateViewController.swift in Sources */,
 				A8CF8C7C23BD621200ADAC29 /* AppDelegate.swift in Sources */,
 				A8CF8C7E23BD621200ADAC29 /* SceneDelegate.swift in Sources */,
 			);

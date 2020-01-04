@@ -10,13 +10,13 @@
         <!--This is Progress-->
         <scene sceneID="xOU-dw-cGI">
             <objects>
-                <tableViewController id="u9q-Td-OBR" sceneMemberID="viewController">
+                <tableViewController id="u9q-Td-OBR" customClass="ProgressUpdateTableViewController" customModule="This_Is_Progress" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WUv-Ea-5ux">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="d8V-Da-BHu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="progressCell" id="d8V-Da-BHu">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d8V-Da-BHu" id="Wnz-FF-F3L">
@@ -38,46 +38,95 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="d4M-ks-yVI" kind="show" identifier="showUpdate" id="c7v-s0-rsK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8B2-lx-VMj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--View Progress Update View Controller-->
+        <scene sceneID="sg7-LH-mje">
+            <objects>
+                <viewController id="d4M-ks-yVI" customClass="ViewProgressUpdateViewController" customModule="This_Is_Progress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iYy-Lt-BB8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DnH-N2-Yyb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VKg-Ar-c0m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MqM-CY-taE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48" y="826"/>
+        </scene>
+        <!--Create Progress Update View Controller-->
         <scene sceneID="TuF-il-q0j">
             <objects>
-                <viewController id="zUg-TM-hJq" sceneMemberID="viewController">
+                <viewController id="zUg-TM-hJq" customClass="CreateProgressUpdateViewController" customModule="This_Is_Progress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zn7-7H-2if">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-We-ZVO">
-                                <rect key="frame" x="40" y="108" width="334" height="334"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-We-ZVO">
+                                <rect key="frame" x="40" y="109" width="334" height="331.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sGh-We-ZVO" secondAttribute="height" multiplier="1:1" id="vut-Dj-Yu1"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvW-Uf-tgw">
-                                <rect key="frame" x="159" y="450" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvW-Uf-tgw">
+                                <rect key="frame" x="158.5" y="450" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-m2-zvH">
+                                <rect key="frame" x="174.5" y="492" width="65" height="30"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="7Sw-eT-TmG"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="zUg-TM-hJq" eventType="touchUpInside" id="bO3-FW-PWt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="sGh-We-ZVO" firstAttribute="leading" secondItem="uzM-Qd-4nz" secondAttribute="leading" constant="40" id="8cW-JH-Z10"/>
+                            <constraint firstItem="fvW-Uf-tgw" firstAttribute="top" secondItem="sGh-We-ZVO" secondAttribute="bottom" constant="8" id="LCZ-am-e9F"/>
+                            <constraint firstItem="rkM-m2-zvH" firstAttribute="top" secondItem="fvW-Uf-tgw" secondAttribute="bottom" constant="8" id="QHc-b0-3AU"/>
                             <constraint firstItem="uzM-Qd-4nz" firstAttribute="trailing" secondItem="sGh-We-ZVO" secondAttribute="trailing" constant="40" id="VAM-qy-bBv"/>
+                            <constraint firstItem="rkM-m2-zvH" firstAttribute="centerX" secondItem="fvW-Uf-tgw" secondAttribute="centerX" id="Z6I-lW-Kpy"/>
+                            <constraint firstItem="fvW-Uf-tgw" firstAttribute="width" secondItem="sGh-We-ZVO" secondAttribute="width" multiplier="0.290419" id="Zs4-VT-7Sg"/>
                             <constraint firstItem="sGh-We-ZVO" firstAttribute="top" secondItem="uzM-Qd-4nz" secondAttribute="top" constant="20" id="eVT-Je-NNC"/>
+                            <constraint firstItem="fvW-Uf-tgw" firstAttribute="centerX" secondItem="sGh-We-ZVO" secondAttribute="centerX" id="yni-qb-9oo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uzM-Qd-4nz"/>
                     </view>
                     <navigationItem key="navigationItem" id="UiX-WS-hzk">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="N9G-y4-F7O"/>
-                            <barButtonItem systemItem="organize" id="Cmp-3U-80S"/>
+                            <barButtonItem systemItem="camera" id="N9G-y4-F7O">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="zUg-TM-hJq" id="VD2-SM-zLH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="Cmp-3U-80S">
+                                <connections>
+                                    <action selector="existingPhotoTapped:" destination="zUg-TM-hJq" id="Nhy-yu-O9X"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="rkM-m2-zvH" id="mIi-gU-EF1"/>
+                        <outlet property="photoImageView" destination="sGh-We-ZVO" id="uc2-mF-nIA"/>
+                        <outlet property="titleTextField" destination="fvW-Uf-tgw" id="4Z0-pt-JrI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5Z-pE-07K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,6 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sample" width="1502" height="800"/>
+        <image name="plus.square.fill" catalog="system" width="64" height="56"/>
     </resources>
 </document>

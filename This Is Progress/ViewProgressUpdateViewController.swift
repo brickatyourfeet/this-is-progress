@@ -11,12 +11,15 @@ import UIKit
 class ViewProgressUpdateViewController: UIViewController {
     
     var progressUpdate : ProgressUpdate?
-
+    @IBOutlet weak var photoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = progressUpdate?.title
-
+        if let imageData = progressUpdate?.image {
+            photoImageView.image = UIImage(data: imageData)
+        }
     }
     
 

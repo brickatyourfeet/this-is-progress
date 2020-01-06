@@ -84,6 +84,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teal-ice" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXT-Mt-Slb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-We-ZVO">
                                 <rect key="frame" x="40" y="109" width="334" height="331.5"/>
                                 <constraints>
@@ -91,16 +94,17 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvW-Uf-tgw">
-                                <rect key="frame" x="158.5" y="450" width="97" height="34"/>
+                                <rect key="frame" x="73.5" y="450" width="267" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-m2-zvH">
-                                <rect key="frame" x="174.5" y="492" width="65" height="30"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="152" y="503" width="110" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="7Sw-eT-TmG"/>
+                                    <constraint firstAttribute="height" constant="45" id="jLu-ai-7sV"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -109,14 +113,19 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.6764199190680531" green="0.98039215690000003" blue="0.8395763103564563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rkM-m2-zvH" firstAttribute="leading" secondItem="uzM-Qd-4nz" secondAttribute="leading" constant="152" id="4tV-s2-dGz"/>
+                            <constraint firstItem="rkM-m2-zvH" firstAttribute="top" secondItem="fvW-Uf-tgw" secondAttribute="bottom" constant="19" id="51c-AR-PuT"/>
                             <constraint firstItem="sGh-We-ZVO" firstAttribute="leading" secondItem="uzM-Qd-4nz" secondAttribute="leading" constant="40" id="8cW-JH-Z10"/>
+                            <constraint firstItem="TXT-Mt-Slb" firstAttribute="trailing" secondItem="uzM-Qd-4nz" secondAttribute="trailing" id="ADA-jz-yoZ"/>
+                            <constraint firstItem="TXT-Mt-Slb" firstAttribute="top" secondItem="uzM-Qd-4nz" secondAttribute="top" id="GMm-vf-Ulp"/>
+                            <constraint firstItem="TXT-Mt-Slb" firstAttribute="leading" secondItem="uzM-Qd-4nz" secondAttribute="leading" id="GWX-Ij-8oN"/>
+                            <constraint firstAttribute="bottom" secondItem="TXT-Mt-Slb" secondAttribute="bottom" id="Jr6-ZY-4jx"/>
                             <constraint firstItem="fvW-Uf-tgw" firstAttribute="top" secondItem="sGh-We-ZVO" secondAttribute="bottom" constant="8" id="LCZ-am-e9F"/>
-                            <constraint firstItem="rkM-m2-zvH" firstAttribute="top" secondItem="fvW-Uf-tgw" secondAttribute="bottom" constant="8" id="QHc-b0-3AU"/>
+                            <constraint firstItem="rkM-m2-zvH" firstAttribute="centerX" secondItem="fvW-Uf-tgw" secondAttribute="centerX" id="O7q-Lh-sQC"/>
                             <constraint firstItem="uzM-Qd-4nz" firstAttribute="trailing" secondItem="sGh-We-ZVO" secondAttribute="trailing" constant="40" id="VAM-qy-bBv"/>
-                            <constraint firstItem="rkM-m2-zvH" firstAttribute="centerX" secondItem="fvW-Uf-tgw" secondAttribute="centerX" id="Z6I-lW-Kpy"/>
-                            <constraint firstItem="fvW-Uf-tgw" firstAttribute="width" secondItem="sGh-We-ZVO" secondAttribute="width" multiplier="0.290419" id="Zs4-VT-7Sg"/>
+                            <constraint firstItem="fvW-Uf-tgw" firstAttribute="width" secondItem="sGh-We-ZVO" secondAttribute="width" multiplier="0.8" id="Zs4-VT-7Sg"/>
                             <constraint firstItem="sGh-We-ZVO" firstAttribute="top" secondItem="uzM-Qd-4nz" secondAttribute="top" constant="20" id="eVT-Je-NNC"/>
                             <constraint firstItem="fvW-Uf-tgw" firstAttribute="centerX" secondItem="sGh-We-ZVO" secondAttribute="centerX" id="yni-qb-9oo"/>
                         </constraints>
@@ -144,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5Z-pE-07K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="130"/>
+            <point key="canvasLocation" x="747.82608695652175" y="129.91071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2xH-2g-7n7">
@@ -165,5 +174,6 @@
     </scenes>
     <resources>
         <image name="plus.square.fill" catalog="system" width="64" height="56"/>
+        <image name="teal-ice" width="910" height="1340"/>
     </resources>
 </document>

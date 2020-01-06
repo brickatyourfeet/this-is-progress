@@ -12,8 +12,12 @@ class ProgressUpdateTableViewController: UITableViewController {
 
     var updates : [ProgressUpdate] = []
     
+//    UINavigationBar.appearance().titleTextAttributes = NSAttributedString.Key.font: UIFont(name: "Georgia-Bold", size: 24)!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AmericanTypewriter", size: 21)!]
     }
 
     override func viewWillAppear(_ animated: Bool) {

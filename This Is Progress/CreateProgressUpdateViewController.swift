@@ -19,10 +19,14 @@ class CreateProgressUpdateViewController: UIViewController, UIImagePickerControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "This is Progress"
+        
         addButton.layer.cornerRadius = addButton.frame.size.height / 2
         
         pickerController.delegate = self
+        
+
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

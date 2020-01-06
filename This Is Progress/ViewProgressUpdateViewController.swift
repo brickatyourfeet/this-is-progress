@@ -16,11 +16,17 @@ class ViewProgressUpdateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //move removing title text attributes to performing segue when title is long
+        //self.navigationController!.navigationBar.titleTextAttributes = nil
+        
         title = progressUpdate?.title
         if let imageData = progressUpdate?.image {
             photoImageView.image = UIImage(data: imageData)
         }
+        
+        //create label and add white text below image
     }
+    
     
 
 }
